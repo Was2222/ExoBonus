@@ -1,0 +1,79 @@
+<div class="page-layout">
+    <!-- Barre menu en haut -->
+    <app-sidebar class="topbar"></app-sidebar>
+  
+<div class="page-wrapper">
+    <!-- Bandeau haut -->
+    <div class="header-bar">
+      <img src="assets/img/logo-si-prod.png" class="logo" alt="SI PROD" />
+      <div class="user-date-block">
+        <div class="date">{{ currentDate }}</div>
+        <div class="user">Utilisateur : <strong>{{ currentUser }}</strong></div>
+      </div>
+      <img src="assets/logo_in.png" class="logo" alt="" />
+    </div>
+  
+    <!-- Contenu principal -->
+    <div class="container">
+  
+      <h3>Interface SIMT Retour</h3>
+  
+      <div class="form-group">
+        <label for="executionDate">Date de traitement</label>
+        <input type="date" id="executionDate" class="form-control" />
+      </div>
+  
+      <div class="table-wrapper">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Nom fichier Image</th>
+              <th>Code Banque</th>
+              <th>Nombre de Chèque</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Fichier_2024_04_01</td>
+              <td>001</td>
+              <td>125</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Nombre fichiers [.MAILO] lus</label>
+          <input type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label>Total Chèques</label>
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+  
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Total fichiers traités</label>
+          <input type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label>Images JPG extraites</label>
+          <input type="text" class="form-control" />
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label>Analyse LOG générale</label>
+        <input type="text" class="form-control" />
+      </div>
+  
+      <div class="button-group">
+        <button class="btn btn-blue">Contrôle Traitement SIMT</button>
+        <button class="btn btn-green">Envoi Métier</button>
+        <button class="btn btn-red">Quitter</button>
+      </div>
+    </div>
+  </div>
+  

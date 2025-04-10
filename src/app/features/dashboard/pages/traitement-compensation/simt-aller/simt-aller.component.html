@@ -1,0 +1,75 @@
+<div class="page-layout">
+    <!-- Barre menu en haut -->
+    <app-sidebar class="topbar"></app-sidebar>
+  
+    <!-- Contenu principal en dessous -->
+    <div class="main-content">
+      <div class="container">
+  
+        <h2 class="title">SIMT Aller</h2>
+        <p class="subtitle">Résultat de l'exécution de l'interface SIMT Aller :</p>
+  
+        <div class="table-wrapper">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Nom fichier Image</th>
+                <th>Code de la Banque</th>
+                <th>Nombre de Chèque</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td colspan="3" class="empty">Aucune donnée</td></tr>
+            </tbody>
+          </table>
+        </div>
+  
+        <div class="centered-button">
+          <button class="action-button">
+            <i class="material-icons">build</i> OlySimt TOOLS
+          </button>
+        </div>
+  
+        <form class="form-grid">
+          <div class="form-group">
+            <label>Nombre fichiers [.MAILI]</label>
+            <input type="text" placeholder="ex : 5">
+          </div>
+          <div class="form-group">
+            <label>Total Chèque</label>
+            <input type="text">
+          </div>
+          <div class="form-group">
+            <label>Fichiers ORD</label>
+            <input type="text">
+          </div>
+          <div class="form-group">
+            <label>JPG files extraits</label>
+            <input type="text">
+          </div>
+          <div class="form-group">
+            <label>Erreurs LOG</label>
+            <input type="text">
+          </div>
+          <div class="form-group">
+            <label>Total IMG extrait</label>
+            <input type="text">
+          </div>
+        </form>
+  
+        <div class="button-row">
+          <button class="action-button">
+            <i class="material-icons"></i> Contrôle Traitement SIMT
+          </button>
+          <button class="action-button green">
+            <i class="material-icons"></i> Envoi Métier
+          </button>
+          <button class="action-button red">
+            <i class="material-icons"></i> Quitter
+          </button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  

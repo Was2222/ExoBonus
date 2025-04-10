@@ -1,0 +1,58 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #1d2936;
+  background-color: #e0e6ed;
+}
+
+a {
+  color: #6a9726;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.logo-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.logo {
+  width: 50px; /* Largeur du logo */
+  height: auto; /* Garde les proportions */
+  display: block;
+  margin: 0 auto; /* Centre l'image */
+}
+
+
+/* Dashboard Colors */
+.dashboard {
+  background-color: #1d2936;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Login Button */
+.button-login {
+  background-color: #6a9726;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button-login:hover {
+  background-color: #5a8520;
+}

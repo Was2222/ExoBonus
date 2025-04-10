@@ -1,0 +1,76 @@
+<div class="page-layout">
+    <!-- Barre menu en haut -->
+    <app-sidebar class="topbar"></app-sidebar>
+  
+<div class="page-wrapper">
+    <!-- Bandeau -->
+    <div class="header-bar">
+      <img src="assets/img/logo-si-prod.png" class="logo" alt="SI PROD" />
+      <div class="header-title">
+        <div class="date">{{ currentDate }}</div>
+        <div class="label">Discordance Olympic</div>
+      </div>
+      <img src="assets/img/logo-cdg.png" class="logo" alt="CDG" />
+    </div>
+  
+    <!-- Contenu -->
+    <div class="container">
+      <div class="tables-layout">
+        <!-- Colonne gauche -->
+        <div class="table-column">
+          <div class="table-wrapper" *ngFor="let t of [1,2,3]">
+            <table>
+              <thead>
+                <tr>
+                  <th>Agence</th>
+                  <th>REFERENCE_REN</th>
+                  <th>DATE_OPERATION</th>
+                  <th>OPERANT</th>
+                  <th>MONTANT</th>
+                  <th>STATUT</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>*</td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+  
+        <!-- Colonne droite -->
+        <div class="table-column">
+          <div class="table-wrapper" *ngFor="let t of [1,2,3]">
+            <table>
+              <thead>
+                <tr>
+                  <th>reference</th>
+                  <th>STATUT</th>
+                  <th>MONTANT</th>
+                  <th>OPERANT</th>
+                  <th>RACINE</th>
+                  <th>GENRE</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>*</td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Boutons -->
+      <div class="button-group">
+        <button class="btn btn-blue">Lancez l’analyse</button>
+      </div>
+      <div class="button-group">
+        <button class="btn btn-green">Enregistrer</button>
+        <button class="btn btn-red">Quitter</button>
+      </div>
+    </div>
+  </div>
+  
